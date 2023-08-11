@@ -1,0 +1,747 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="[qt+挂载od+自动上传od]https:&#x2F;&#x2F;sunpma.com&#x2F;864.html [安装qb]作者发布的编译好的二制文件地址：https:&#x2F;&#x2F;github.com&#x2F;userdocs&#x2F;qbittorrent-nox-static&#x2F;releases选择一下适合自己电脑的版本。用ssh登录到debian，执行以下命令 下载安装。我的电脑是x86的，所以选择x86_64-qbittorrent-no">
+<meta property="og:type" content="article">
+<meta property="og:title" content="qt+挂载od+自动上传od">
+<meta property="og:url" content="http://example.com/2023/08/11/qt-%E6%8C%82%E8%BD%BDod-%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0od/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[qt+挂载od+自动上传od]https:&#x2F;&#x2F;sunpma.com&#x2F;864.html [安装qb]作者发布的编译好的二制文件地址：https:&#x2F;&#x2F;github.com&#x2F;userdocs&#x2F;qbittorrent-nox-static&#x2F;releases选择一下适合自己电脑的版本。用ssh登录到debian，执行以下命令 下载安装。我的电脑是x86的，所以选择x86_64-qbittorrent-no">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/media/16877472249448/16877488093493.jpg">
+<meta property="article:published_time" content="2023-08-11T03:08:47.000Z">
+<meta property="article:modified_time" content="2023-08-11T03:14:08.174Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/media/16877472249448/16877488093493.jpg">
+  
+  
+  
+  <title>qt+挂载od+自动上传od - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="qt+挂载od+自动上传od"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-08-11 11:08" pubdate>
+          2023年8月11日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          5.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          46 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">qt+挂载od+自动上传od</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="qt-挂载od-自动上传od"><a href="#qt-挂载od-自动上传od" class="headerlink" title="[qt+挂载od+自动上传od]"></a>[qt+挂载od+自动上传od]</h1><p><a target="_blank" rel="noopener" href="https://sunpma.com/864.html">https://sunpma.com/864.html</a></p>
+<h2 id="安装qb"><a href="#安装qb" class="headerlink" title="[安装qb]"></a>[安装qb]</h2><p>作者发布的编译好的二制文件地址：<br><a target="_blank" rel="noopener" href="https://github.com/userdocs/qbittorrent-nox-static/releases">https://github.com/userdocs/qbittorrent-nox-static/releases</a><br>选择一下适合自己电脑的版本。用ssh登录到debian，执行以下命令</p>
+<p>下载安装。我的电脑是x86的，所以选择x86_64-qbittorrent-nox：</p>
+<h3 id="amd-4-4-2"><a href="#amd-4-4-2" class="headerlink" title="amd 4.4.2"></a>amd 4.4.2</h3><pre><code class="hljs">wget -qO /root/x86_64-qbittorrent-nox https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.4.2_v1.2.15/x86_64-qbittorrent-nox
+</code></pre>
+<p>amd 4.3.9</p>
+<pre><code class="hljs">wget -qO /root/x86_64-qbittorrent-nox https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v1.2.15/x86_64-qbittorrent-nox
+</code></pre>
+<p>arm 4.5.4</p>
+<pre><code class="hljs">wget -qO /root/x86_64-qbittorrent-nox https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.5.4_v2.0.9/aarch64-qbittorrent-nox
+</code></pre>
+<h3 id="arm-4-4-2"><a href="#arm-4-4-2" class="headerlink" title="arm 4.4.2"></a>arm 4.4.2</h3><pre><code class="hljs">wget -qO /root/x86_64-qbittorrent-nox https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.4.2_v2.0.6/aarch64-qbittorrent-nox
+</code></pre>
+<p> 给权限</p>
+<pre><code class="hljs">chmod 700 /root/x86_64-qbittorrent-nox
+</code></pre>
+<p>然后添加如下内容：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs routeros">cat &gt; /etc/systemd/system/qbt.service &lt;&lt;EOF<br>[Unit]<br><span class="hljs-attribute">Description</span>=qBittorrent<span class="hljs-built_in"> Service</span><br><span class="hljs-built_in"></span><span class="hljs-attribute">After</span>=network.target nss-lookup.target<br><br>[Service]<br><span class="hljs-attribute">UMask</span>=000<br><span class="hljs-attribute">ExecStart</span>=/root/x86_64-qbittorrent-nox <span class="hljs-attribute">--profile</span>=/root/qbt<br><br>[Install]<br><br><span class="hljs-attribute">WantedBy</span>=multi-user.target<br>EOF<br></code></pre></td></tr></table></figure>
+
+
+<p>备用：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs routeros">vim /etc/systemd/system/qbt.service<br><br>[Unit]<br><span class="hljs-attribute">Description</span>=qBittorrent Daemon<span class="hljs-built_in"> Service</span><br><span class="hljs-built_in"></span><span class="hljs-attribute">After</span>=network.target<br><br>[Service]<br><span class="hljs-attribute">LimitNOFILE</span>=512000<br><span class="hljs-attribute">User</span>=root<br><span class="hljs-attribute">ExecStart</span>=/root/x86_64-qbittorrent-nox <span class="hljs-attribute">--profile</span>=/root/qbt<br><br>[Install]<br><br><span class="hljs-attribute">WantedBy</span>=multi-user.target<br><br></code></pre></td></tr></table></figure>
+
+<p>请注意：–profile&#x3D;&#x2F;usr&#x2F;local&#x2F;etc这个选项，表示qBittorrent的配置目录，如果不写，就是在当前用户的主目录，例如root目录下面。我建议按上面的选项填写，这样规范一些。</p>
+<h3 id="启动关闭命令："><a href="#启动关闭命令：" class="headerlink" title="启动关闭命令："></a>启动关闭命令：</h3><figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs nsis"><span class="hljs-params">system</span>ctl enable qbt   <span class="hljs-comment">#开机启动，第一次必须要执行此命令</span><br><span class="hljs-params">system</span>ctl start qbt  <span class="hljs-comment">#启动</span><br><span class="hljs-params">system</span>ctl stop qbt  <span class="hljs-comment">#停止</span><br><span class="hljs-params">system</span>ctl status qbt  <span class="hljs-comment">#软件运行状态查询</span><br><span class="hljs-params">system</span>ctl enable qbt &amp;&amp; <span class="hljs-params">system</span>ctl start qbt &amp;&amp; <span class="hljs-params">system</span>ctl status qbt<br></code></pre></td></tr></table></figure>
+
+<pre><code class="hljs">rm -rf /usr/bin/qbittorrent-nox #卸载qt
+rm -rf /etc/systemd/system/qbt.service
+</code></pre>
+<p>如有调整</p>
+<pre><code class="hljs">systemctl daemon-reload 
+systemctl enable qbt
+systemctl start qbt
+systemctl status qbt
+</code></pre>
+<h2 id="docker安装qt"><a href="#docker安装qt" class="headerlink" title="docker安装qt"></a>docker安装qt</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs routeros">docker <span class="hljs-built_in">run</span> -d \<br><span class="hljs-attribute">--name</span>=qbittorrent \<br><span class="hljs-attribute">--net</span>=host \<br>-e <span class="hljs-attribute">TZ</span>=Asia/Shanghai \<br>-e <span class="hljs-attribute">WEBUI_PORT</span>=8081 \<br>-v /root/qb/config:<span class="hljs-built_in">/config </span>\<br>-v /root/qb/download/complete:/downloads \<br>--restart unless-stopped \<br>lscr.io/linuxserver/qbittorrent<br><br></code></pre></td></tr></table></figure>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>到目前为止，qBittorrent就算安装成功了，打开浏览器，输入：IP:8080，就可以打开qBittorrent的网页界面了。<br>用户名：admin<br>密码：adminadmin</p>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>1，登录后，点齿轮修改语言<br>2，默认网页登录端口是8080，可以在设置里改为其它的<br>3，切记第一次登录后，修改用户名和密码</p>
+<h2 id="注册e5教程"><a href="#注册e5教程" class="headerlink" title="[注册e5教程]"></a>[注册e5教程]</h2><p><a target="_blank" rel="noopener" href="https://www.mspace.cc/archives/479">https://www.mspace.cc/archives/479</a><br><a target="_blank" rel="noopener" href="https://blog.tanglu.me/use-rclone-to-upload-torrents-when-downloaded/">https://blog.tanglu.me/use-rclone-to-upload-torrents-when-downloaded/</a></p>
+<h2 id="挂载od教程"><a href="#挂载od教程" class="headerlink" title="[挂载od教程]"></a>[挂载od教程]</h2><p><a target="_blank" rel="noopener" href="https://www.misterma.com/archives/900/">https://www.misterma.com/archives/900/</a></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">curl https:<span class="hljs-regexp">//</span>rclone.org/install.sh | sudo bash<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs arduino">rclone config<br><br>./rclone authorize <span class="hljs-string">&quot;onedrive&quot;</span><br></code></pre></td></tr></table></figure>
+<h1 id="reclone-对接od"><a href="#reclone-对接od" class="headerlink" title="[reclone 对接od]"></a>[reclone 对接od]</h1><h2 id="1安装-Rclone"><a href="#1安装-Rclone" class="headerlink" title="1安装 Rclone"></a>1安装 Rclone</h2><p>官方提供了<a target="_blank" rel="noopener" href="https://p3terx.com/go/aHR0cHM6Ly9yY2xvbmUub3JnL2luc3RhbGwvI3NjcmlwdC1pbnN0YWxsYXRpb24">一键安装脚本</a>：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">curl https:<span class="hljs-regexp">//</span>rclone.org/install.sh | sudo bash<br><br></code></pre></td></tr></table></figure>
+
+<h3 id="2配置-Rclone"><a href="#2配置-Rclone" class="headerlink" title="2配置 Rclone"></a>2配置 Rclone</h3><p>输入 <code>rclone config</code> 命令，会出现以下信息，参照下面的注释进行操作。点击查看</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">rclone config<br></code></pre></td></tr></table></figure>
+
+<h2 id="3-OneDrive授权"><a href="#3-OneDrive授权" class="headerlink" title="3.OneDrive授权"></a>3.OneDrive授权</h2><p>这一步是在本地电脑Windows系统操作，进入<a target="_blank" rel="noopener" href="https://rclone.org/downloads/">Rclone下载页面</a>，点击下载Windows版本的Rclone软件，选择Intel&#x2F;AMD-64Bit即可。如果是32位操作系统，那么选择32Bit的。</p>
+<p>下载后将全部文件解压到D:\rclone文件夹，打开CMD命令窗口，依次输入下面两条命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /d d:\rclone<br>rclone authorize <span class="hljs-string">&quot;onedrive&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>第二条命令输入完回车后会自动打开浏览器，登录你的OneDrive账号，点击“是”按钮同意授权。成功后返回到CMD命令窗口就能看到长串授权码，即花括号以及里面的内容。</p>
+<p>将授权码复制下来保存备用，有效期1个小时。</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">Paste the <span class="hljs-keyword">following</span> <span class="hljs-keyword">into</span> your remote machine <span class="hljs-comment">---&gt;</span><br>&#123;&quot;access_token&quot;:&quot;EwCAA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAAS7oJFl1pmRc4whIlOj5am6oPQ+zf1kOcygsi5JHL2IgXh55prjh3r6P/fSZr8K9UJ58Pksh1YTJkzL/kHywyZnEvM8kDr55B1J//SXLJ1sGNsNR9vH0Rmz9xMrnl6GFrF8z+UQxi+GL3L3MpBN3NenacA0+pmVXKk8hghj64a8xxEFhlc+b0LJCp4yMg+96548752OPQwLZEPikbJ1zB5Wm5IUzuq03zNKa5lOicGET0l8zWW+itYg2Ca+mCS9DRm5e8NcPL5yiLZmRIm4vCI3pIQGKxEKghQG2lLmjMnWJj8BMotxH9Px2/XWs2TJ3BdLbuX2EjdYy8MNoBbaYXafe3uHx!UpdOwFHCiKnJqYomn*8cCFNP7RM1W8DMzXNBAlgTnuaRo6v7xjxFX3xIrXWonyCk*l1Z7glOXEmRS&quot;,&quot;expiry&quot;:&quot;2021-09-16T15:47:47.8171297+08:00&quot;&#125;<br>&lt;<span class="hljs-comment">---End paste</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-挂载到-vps"><a href="#4-挂载到-vps" class="headerlink" title="4. 挂载到 vps"></a>4. 挂载到 vps</h2><p>首先新建一个文件夹用于挂载：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">mkdir <span class="hljs-regexp">/root/</span>ss2<br></code></pre></td></tr></table></figure>
+
+<p>开始挂载：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">rclone mount ss2: <span class="hljs-string">/root/ss2</span> <span class="hljs-params">--allow-other</span> <span class="hljs-params">--allow-non-empty</span> <span class="hljs-params">--vfs-cache-mode</span> writes <span class="hljs-params">--daemon</span><br></code></pre></td></tr></table></figure>
+
+<p>其中 odrive 是 rclone 配置时输入的配置名称，&#x2F;onedrive 是挂载目录，–daemon 是指后台运行。</p>
+<p>此时可能会报错：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">Fatal</span> <span class="hljs-literal">error</span>: mount not ready<br></code></pre></td></tr></table></figure>
+
+
+
+<p>此时可能会报错：</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mel">Fatal <span class="hljs-keyword">error</span>: failed to mount FUSE fs: fusermount: <span class="hljs-keyword">exec</span>: <span class="hljs-string">&quot;fusermount&quot;</span>: executable <span class="hljs-keyword">file</span> not found <span class="hljs-keyword">in</span> $PATH<br></code></pre></td></tr></table></figure>
+
+<p>这是因为缺少依赖，我们选择安装</p>
+<p>centos 系使用：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">yum <span class="hljs-keyword">install</span> -y fuse3<br></code></pre></td></tr></table></figure>
+
+<p>debian 系使用：</p>
+<pre><code class="hljs">apt-get update
+apt-get install -y fuse3
+apt-get install -y fuse
+apt-get install fuse -y
+</code></pre>
+<p>AMD</p>
+<pre><code class="hljs">apt install -y fuse3
+</code></pre>
+<p>再次执行挂载命令，如果没有报错，就是挂载成功了。</p>
+<p>检查挂载：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">df</span> -h<br></code></pre></td></tr></table></figure>
+<h2 id="开启自启rclone"><a href="#开启自启rclone" class="headerlink" title="开启自启rclone"></a>开启自启rclone</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs routeros">cat &gt; /etc/systemd/system/ss5t.service &lt;&lt;EOF<br>[Unit]<br><span class="hljs-attribute">Description</span>=Rclone<br><span class="hljs-attribute">AssertPathIsDirectory</span>=LocalFolder<br><span class="hljs-attribute">After</span>=network-online.target<br><br>[Service]<br><span class="hljs-attribute">Type</span>=simple<br><span class="hljs-attribute">ExecStart</span>=/usr/bin/rclone mount ss5t: /home/ss5t  --umask 0000  --default-permissions  --allow-non-empty  --allow-other  --buffer-size 32M  --vfs-read-chunk-size 64M  --vfs-read-chunk-size-limit 1G<br><span class="hljs-attribute">ExecStop</span>=fusermount -u LocalFolder<br><span class="hljs-attribute">Restart</span>=on-abort<br><span class="hljs-attribute">User</span>=root<br><br>[Install]<br><span class="hljs-attribute">WantedBy</span>=default.target<br>EOF<br><br></code></pre></td></tr></table></figure>
+
+
+<p>说下命令：<a target="_blank" rel="noopener" href="https://wlnxing.com/archives/4.html">https://wlnxing.com/archives/4.html</a></p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">挂载（启动服务）：systemctl <span class="hljs-keyword">start</span> <span class="hljs-type">name</span>.service<br>停止挂载（停止挂载）：systemctl stop <span class="hljs-type">name</span>.service<br>重启服务：systemctl <span class="hljs-keyword">restart</span> <span class="hljs-type">name</span>.service<br>开机挂载（开机启动）：systemctl <span class="hljs-keyword">enable</span> <span class="hljs-type">name</span>.service<br>取消开机启动：systemctl <span class="hljs-keyword">disable</span> <span class="hljs-type">name</span>.service<br></code></pre></td></tr></table></figure>
+
+
+
+<p>3.设置开机启动</p>
+<pre><code class="hljs">systemctl enable ss5t
+</code></pre>
+<p>启动挂载</p>
+<pre><code class="hljs">systemctl start ss5t
+</code></pre>
+<p>至此，每次开机都会自动挂载网盘了。</p>
+<p>其他命令如下：<br>停止挂载</p>
+<pre><code class="hljs">systemctl stop rclone
+</code></pre>
+<p>重新挂载</p>
+<pre><code class="hljs">systemctl restart rclone
+</code></pre>
+<h1 id="qbittorrent下载完成后自动上传-并自动删种"><a href="#qbittorrent下载完成后自动上传-并自动删种" class="headerlink" title="qbittorrent下载完成后自动上传 并自动删种"></a>qbittorrent下载完成后自动上传 并自动删种</h1><p>使用方法：<br>qB WEB UI 勾选“Torrent 完成时运行外部程序”<br>填上：</p>
+<pre><code class="hljs">bash /root/qb_auto.sh  &quot;%N&quot; &quot;%F&quot; &quot;%R&quot; &quot;%D&quot; &quot;%C&quot; &quot;%Z&quot; &quot;%I&quot;
+</code></pre>
+<p><img src="/media/16877472249448/16877488093493.jpg" srcset="/img/loading.gif" lazyload></p>
+<pre><code class="hljs">chmod +x qb_auto.sh
+</code></pre>
+<p>请自行安装jq</p>
+<p>确保两个脚本的auto_del_flag变量一致，否则没办法删除分享率达标的种子<br>只吸血的同学只需要将qu_auto.sh的leeching_mode设为true即可<br>需要控制分享率的需要两个脚本<br>并添加监控任务</p>
+<p>crontab -e</p>
+<pre><code class="hljs">*/1 * * * * bash /root/ratio_mon.sh
+</code></pre>
+<h1 id="rclone手动上传"><a href="#rclone手动上传" class="headerlink" title="rclone手动上传"></a>rclone手动上传</h1><pre><code class="hljs">screen rclone move /root/qb/download/complete/Bangumi dmzf:/动漫 --transfers 5 -P --onedrive-chunk-size 100M
+</code></pre>
+<p>1</p>
+<pre><code class="hljs">screen rclone move /root/qbt/qBittorrent/downloads/筱田优 ribenyouma:/筱田优 --transfers 2 -P --onedrive-chunk-size 100M
+</code></pre>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>qt+挂载od+自动上传od</div>
+      <div>http://example.com/2023/08/11/qt-挂载od-自动上传od/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年8月11日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/08/11/hello-world/" title="Hello World">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/08/11/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">
+                        <span class="hidden-mobile">测试文章</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
